@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(34, 34, 34);
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 53px 100px;
+  height: 80px;
+  margin-bottom: 152px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 30px;
+  text-align: left;
+  text-shadow: -1px 0 darkorange, 0 1px darkorange, 1px 0 darkorange,
+    0 -1px darkorange;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  color: darkorange;
+}
+
+a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contactBtn {
+  border: 2px solid darkorange;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.contactBtn:hover {
+  color: #ffffff;
+  background-color: darkorange;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+
+  padding: 26px;
+}
+
+aside {
+  width: 100vw;
+  display: flex;
+  width: 420px;
+  flex-direction: column;
+  gap: 17px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.title {
+  color: darkorange;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+p {
+  font-size: 17px;
+  margin: 12px 0 26px;
+}
+
+img {
+  width: 530px;
+  position: relative;
+  z-index: 0;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: gray;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 17px;
+}
+
+.submitBtn {
+  width: 70%;
+  background-color: darkorange;
+  color: #ffffff;
+  font-size: 17px;
+  border: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: transparent;
+  border: 2px solid darkorange;
+}
+
+@media (max-width: 1025px) {
+  img {
+    width: 430px;
+  }
+}
+
+@media (max-width: 825px) {
+  header {
+    padding: 53px 71px;
+  }
+}
+
+@media (max-width: 435px) {
+  header {
+    padding: 53px 15px;
+    justify-content: space-around;
+    margin-bottom: 35px;
+  }
+  h1 {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  li {
+    display: none;
+  }
+  a {
+    font-size: 15px;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 370px;
+  }
+  img {
+    width: 350px;
+  }
+}
