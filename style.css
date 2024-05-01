@@ -88,13 +88,17 @@ h2 {
 
 p {
   font-size: 17px;
-  margin: 12px 0 26px;
+  margin: 12px 0 12px;
 }
 
 img {
   width: 530px;
   position: relative;
   z-index: 0;
+}
+
+.label {
+  margin-bottom: 0;
 }
 
 input {
@@ -122,6 +126,11 @@ input {
 
 .submitBtn:hover {
   background: transparent;
+  border: 2px solid darkorange;
+}
+
+.submitBtn:active {
+  background: rgb(99, 99, 99, 0.4);
   border: 2px solid darkorange;
 }
 
